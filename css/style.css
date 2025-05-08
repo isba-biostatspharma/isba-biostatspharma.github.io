@@ -1384,14 +1384,14 @@ color: #152b79;
 }
 
 #news #news-list a {
-  margin: 0;
-  padding: 0;
-  display: inline;
+  padding: 18px 0;
+  display: block;
   position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  padding-right: 20px;
 }
 
 #news #news-list i {
@@ -1415,6 +1415,13 @@ color: #152b79;
 
 #news #news-list a.collapsed i::before {
   content: "\f055" !important;
+}
+
+#news #news-list a.inline {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: #007BFF;
 }
 
 
