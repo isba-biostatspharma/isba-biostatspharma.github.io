@@ -1384,14 +1384,14 @@ color: #152b79;
 }
 
 #news #news-list a {
-  padding: 18px 0;
-  display: block;
+  margin: 0;
+  padding: 0;
+  display: inline;
   position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  padding-right: 20px;
 }
 
 #news #news-list i {
