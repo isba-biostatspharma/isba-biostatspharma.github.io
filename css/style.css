@@ -1421,7 +1421,82 @@ color: #152b79;
   margin: 0;
   padding: 0;
   display: inline;
-  color: #1a1a1a;
+  color: #f82249;
+  text-decoration: underline;
+}
+
+/* Inline links inside collapsible item bodies (Events, News, F.A.Q.) */
+#events #events-list p a,
+#news #news-list p a,
+#faq #faq-list p a {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  position: static;
+  font-family: "Open Sans", sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: #f82249;
+  text-decoration: underline;
+}
+
+#events #events-list p a:hover,
+#news #news-list p a:hover,
+#faq #faq-list p a:hover {
+  color: #e0072f;
+}
+
+/* Links inside the Awards section content */
+#awards p a,
+#awards ul li a {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Events Section (mirrors the News list styling)
+--------------------------------------------------------------*/
+#events #events-list {
+  padding: 0;
+  list-style: none;
+}
+
+#events #events-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#events #events-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#events #events-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#events #events-list p {
+  margin-bottom: 20px;
+}
+
+#events #events-list a.collapse {
+  color: #f82249;
+}
+
+#events #events-list a.collapsed {
+  color: #000;
+}
+
+#events #events-list a.collapsed i::before {
+  content: "\f055" !important;
 }
 
 
