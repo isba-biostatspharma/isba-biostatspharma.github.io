@@ -1,0 +1,24 @@
+project:
+  type: default
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - "css/**"
+    - "img/**"
+    - "js/**"
+    - "lib/**"
+    - "docs/**"
+    - "2023 Paper Winners Webinar .docx (4).pdf"
+    - "ISBA_BoP_Jan_2020.pdf"
+
+format:
+  html:
+    minimal: true
+    from: markdown-smart
+    include-in-header: partials/head.html
+    include-before-body: partials/before-body.html
+    include-after-body: partials/after-body.html
+
+filters:
+  - filters/collapse.lua
